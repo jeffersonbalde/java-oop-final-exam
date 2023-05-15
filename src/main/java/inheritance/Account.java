@@ -3,7 +3,7 @@ package inheritance;
 public abstract class Account {
 
     private int accountNumber;
-    private double balance;
+    protected double balance;
 
     public Account() {}
 
