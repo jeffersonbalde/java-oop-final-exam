@@ -26,29 +26,32 @@ public class SavingsAccount extends Account{
 
     public void applyInterest() {
         double interest = calcInterest();
-        System.out.printf("Interest amount %.2f added to balance%n", interest);
+        System.out.println();
+            System.out.println("                        INTEREST: " + interest + "              ");
         deposit(interest);
     }
 
     public void deposit(double amount){
         if(amount > 0) {
             balance += amount;
-            System.out.printf("Amount %.2f deposit%n", amount);
-            System.out.printf("Current Balance is: %.2f%n", balance);
+            System.out.println();
+            System.out.println("                        DEPOSIT: " + amount + "                ");
+            System.out.println("                        BALANCE: " + balance + "               ");
         }else {
-            System.out.println("A negative amount cannot be deposited");
+            System.out.println("INVALID! AMOUNT TO LOW");
         }
     }
 
     public void withdraw(double amount){
         if(amount > 0){
             if((amount) <= balance) {
-                System.out.printf("Amount of %.2f withdrawn from Account%n", amount);
                 balance -= amount;
-                System.out.printf("Current Balance is: %.2f%n", balance);
+                System.out.println();
+                System.out.println("                        WITHDRAWN: " + amount + "              ");
+                System.out.println("                        BALANCE: " + balance + "               ");
             }
         }else {
-            System.out.println("Negative amount cannot be withdrawn");
+            System.out.println("INVALID! AMOUNT TO LOW");
         }
     }
 }
