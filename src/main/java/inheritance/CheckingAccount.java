@@ -4,9 +4,9 @@ public class CheckingAccount extends Account {
 
     private static double FEE = 2.5;
 
-    public CheckingAccount() {
-        super();
-    }
+//    public CheckingAccount() {
+//        super();
+//    }
 
     public CheckingAccount(int accountNumber, double fee) {
         super(accountNumber);

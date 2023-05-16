@@ -2,11 +2,11 @@ package inheritance;
 
 import java.util.Scanner;
 
-public class AccountDriver {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Account accounts[] = new Account[10];
+        Account[] accounts = new Account[10];
         int numofAccounts = 0;
 
         int choice;
