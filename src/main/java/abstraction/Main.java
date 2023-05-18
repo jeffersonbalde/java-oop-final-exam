@@ -1,4 +1,4 @@
-package encapsulation;
+package abstraction;
 
 import java.util.Scanner;
 

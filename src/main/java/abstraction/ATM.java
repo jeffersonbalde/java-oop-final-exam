@@ -1,4 +1,4 @@
-package encapsulation;
+package abstraction;
 
 public class ATM {
     private double balance;

@@ -1,4 +1,4 @@
-package encapsulation;
+package abstraction;
 
 public interface ATMOperationInterface {
     public void viewBalance();
